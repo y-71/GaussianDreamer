@@ -103,7 +103,7 @@ def render(
 
     # Rasterize visible Gaussians to image, obtain their radii (on screen).
     # import pdb; pdb.set_trace()
-    rendered_image, radii, depth = rasterizer(
+    rendered_image, radii, depth, _ = rasterizer(
         means3D=means3D.float(),
         means2D=means2D.float(),
         shs=shs.float(),
